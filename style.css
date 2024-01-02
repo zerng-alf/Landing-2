@@ -1,0 +1,759 @@
+:root {
+    --azul-fuerte: #004272;
+    --morado: #7651ee; 
+    --azul-oscuro: #001f38;
+    --naranja-claro: #f19800;
+    --transition-duration: 0.7s;
+}
+/* Fuentes */
+@font-face {
+    font-family: Gilroy;
+    src:
+        url(fonts/Gilroy-FREE/Gilroy-ExtraBold.otf) format("otf"),
+        url(assets/fonts/Gilroy-FREE/Gilroy-Light.otf) format("otf");
+}
+@font-face {
+    font-family: "AL_LePORSCHE_PersonalUseOnly";
+    src: url("fonts/leporsche/AL_LePORSCHE_PersonalUseOnly.otf") format("opentype");
+}
+@font-face {
+    font-family: "Nexa-Heavy";
+    src: url("fonts/nexa/Nexa-Heavy.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Nexa-ExtraLight";
+    src: url("fonts/nexa/Nexa-ExtraLight.ttf") format("truetype");
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* font-family: 'Nexa-Heavy', Times, serif; */
+    text-decoration: none;
+    color: var(--);
+}
+
+body {
+    /* background-image: url("imagenes/background-blue.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    overflow-x: none;
+}
+
+main {
+   /*  margin-top: 50px; */
+    width: 100%;
+}
+
+.navbar {
+    padding: 0%;
+}
+/* .navbar-brand{
+    margin: 0%;
+ } */
+
+.navbar img {
+    width: 40%;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-left: 50px;
+}
+.navbar img:hover {
+    transform: scale(1.1);
+}
+
+.navbar li:hover {
+    transition: all 0.4s;
+    transform: scale(1.1);
+}
+
+.navbar a {
+    color: antiquewhite;
+}
+
+.custom-icon {
+    color: white;
+}
+
+.navbar-nav .nav-link p {
+    font-size: 50px;
+}
+
+.navbar img {
+    width: 180px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.navbar img:hover {
+    transform: scale(1.2);
+}
+
+.navbar-iso img {
+    width: 80px;
+    cursor: pointer;
+}
+.navbar-iso img:hover {
+    transform: scale(1.2);
+}
+
+.navbar ul {
+    align-items: end;
+}
+
+.navbar {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /* font-weight: 70%; */
+    letter-spacing: 2px;
+    word-spacing: 50px;
+}
+
+.navbar .nav-item {
+    padding-right: 20px;
+}
+
+.navbar img {
+    max-height: 250px;
+    display: block;
+    margin-right: auto;
+}
+
+/* Seccion de inicio */
+#titulo-main {
+    font-family: "AL_LePORSCHE_PersonalUseOnly";
+    text-align: center;
+    color: #7651ee;
+    font-size: 4em;
+}
+
+@media (max-width: 768px) {
+    #titulo-main {
+        font-family: "AL_LePORSCHE_PersonalUseOnly";
+        text-align: center;
+        color: #7651ee;
+        font-size: 2.5em;
+    }
+}
+
+#parrafos {
+    /* padding-top: 4%; */
+    font-family: "Nexa-Heavy";
+    text-align: left;
+    /*  padding-left: 5%; */
+}
+#parrafos .parrafos1 {
+   /*  margin-right: 10px; */
+   /*  padding-top: 4%; */
+    font-family: "Nexa-Heavy";
+    text-align: left;
+    /*  padding-left: 5%; */
+}
+#parrafos .parrafos2 {
+    margin-left: 20px;
+    padding-top: 4%;
+    font-family: "Nexa-Heavy";
+    text-align: left;
+    /*  padding-left: 5%; */
+}
+#parrafos .parrafos3 {
+    margin-bottom: 30px; 
+    margin-left: 40px;
+    padding-top: 4%;
+    font-family: "Nexa-Heavy";
+    text-align: left;
+    /*  padding-left: 5%; */
+}
+@media (max-width: 768px) {
+    #parrafos {
+        padding-top: 4%;
+        font-family: "Nexa-Heavy";
+        text-align: left;
+        margin: 0%;
+        /*  padding-left: 5%; */
+    }
+    #parrafos .parrafos1 {
+        padding-top: 4%;
+        font-family: "Nexa-Heavy";
+        text-align: left;
+        /*  padding-left: 5%; */
+    }
+    #parrafos.parrafos2 {
+        padding-top: 4%;
+        font-family: "Nexa-Heavy";
+        text-align: left;
+        /*  padding-left: 5%; */
+    }
+    #parrafos .parrafos3 {
+        margin-bottom: 30px; 
+        margin-left: 0px;
+        padding-top: 4%;
+        font-family: "Nexa-Heavy";
+        text-align: left;
+        /*  padding-left: 5%; */
+    }
+}
+
+.text-right p {
+    margin-top: 5%;
+    align-items: center;
+    font-size: 120%;
+}
+
+/* .info-why .row{
+    background-image: url("imagenes/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+} 
+
+@media (max-width: 768px)  {
+    .info-why .row{
+    background-image: url("imagenes/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 140vh;
+    }
+  } */
+
+text .info-why {
+    width: 100%;
+    margin-top: 0;
+}
+
+.info-why h3 {
+    padding-top: 5%;
+    color: #fff;
+    font-family: "Nexa-ExtraLight";
+    text-align: center;
+    font-size: 150%;
+    margin-bottom: 5%;
+}
+
+@media (max-width: 768px) {
+    .info-why h3 {
+        padding-top: 5%;
+        color: #fff;
+        font-family: "Nexa-ExtraLight";
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 5%;
+    }
+}
+
+.left-text {
+    /* margin-top: 100px; */
+    margin-left: 5%;
+}
+@media (max-width: 768px) {
+    .left-text {
+        margin-top: 100px;
+        margin-left: 0%;
+    }
+}
+.left-text h1 {
+    text-align: start;
+    font-family: "AL_LePORSCHE_PersonalUseOnly";
+    font-size: 70px;
+    margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+    .left-text h1 {
+        text-align: center;
+        font-family: "AL_LePORSCHE_PersonalUseOnly";
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .left-text h1 {
+        text-align: center;
+        font-family: "AL_LePORSCHE_PersonalUseOnly";
+        font-size: 30%;
+    }
+}
+
+.text-quote img {
+    text-align: center;
+    max-width: 80%;
+}
+
+.form {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 35px;
+    padding: 10px;
+    margin-left: 13%;
+    text-align: center;
+    justify-content: center;
+    max-width: 500px; /* Establece el ancho máximo deseado para el formulario */
+}
+
+@media (max-width: 992px) {
+    .form {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 35px;
+        margin: 10px;
+        text-align: center;
+        justify-content: center;
+        min-height: 100px;
+    }
+}
+
+/*   @media (max-width: 768px)  {
+    .info-why h3{
+        padding-top: 5%;
+        color: #fff;
+        font-family: 'Nexa-ExtraLight';
+        text-align: center;
+        font-size: 1em;
+        margin-bottom: 5%;
+    }
+  } */
+
+/* .form h3 {
+    text-align: center;
+    justify-content: center;
+    font-family: "AL_LePORSCHE_PersonalUseOnly";
+    margin-top: 8%;
+} */
+#form {
+    border-radius: 20px;
+    padding: 30px 35px;
+    /* background-color: rgba(65, 93, 129, 0.63); */
+    width: 400px;
+    box-shadow: 0 0 15px rgb(10, 15, 49);
+    margin: auto;
+    /* margin-bottom: 60px; */
+}
+
+@media screen and (max-width: 414px) {
+    #form {
+        border-radius: 20px;
+        padding: 30px 35px;
+        /*  background-color: rgba(65, 93, 129, 0.63); */
+        width: 300px;
+        box-shadow: 0 0 15px rgb(10, 15, 49);
+        margin: auto;
+       /*  margin-bottom: 60px; */
+    }
+}
+
+.form-group label {
+    display: block;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color:  #fff;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#most-like,
+#comments,
+#submit {
+    border: 0px;
+    border-radius: 5px;
+    min-width: 100%;
+    padding: 8px;
+    box-shadow: 0 0 5px rgb(42, 60, 95);
+    box-sizing: border-box;
+}
+
+/*button form*/
+
+.button1 {
+    --bg: #3b3935;
+    --hover-bg: var( --morado) ;
+    --hover-text: #fff;;
+    color: var(--morado);
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border-radius: 50px;
+    /* margin-left: 100px; */
+    text-decoration: none;
+}
+
+/* @media screen and (max-width: 414px) {
+    .button1 {
+        --bg: #3b3935;
+        --hover-bg: #fff;
+        --hover-text: #000;
+        color: #fff;
+        border: 1px solid var(--bg);
+        border-radius: 4px;
+        padding: 0.8em 2em;
+        background: var(--bg);
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+        border-radius: 50px;
+        margin-left: 50px;
+    }
+} */
+
+.button1:hover {
+    color: var(--hover-text);
+    -webkit-transform: translate(-0.25rem, -0.25rem);
+    -ms-transform: translate(-0.25rem, -0.25rem);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    -webkit-box-shadow: 0.25rem 0.25rem var(--bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button1:active {
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.cta .cta-btn {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    /* margin: 10px; */
+    border: 2px solid #fff;
+    color: #fff;
+    margin-right: 60px;
+}
+
+/* @media screen and (max-width: 414px) {
+    .cta .cta-btn {
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 12px 40px;
+        border-radius: 50px;
+        transition: 0.5s;
+        border: 2px solid #fff;
+        color: #fff;
+        margin-right: 0px;
+    }
+}
+ */
+.cta .cta-btn:hover {
+    background: #47b2e4;
+    border: 2px solid #47b2e4;
+}
+/* 
+@media (max-width: 1024px) {
+    .cta {
+        background-attachment: scroll;
+    }
+}
+
+@media (min-width: 769px) {
+    .cta .cta-btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+ */
+/*///////////// End button form////////*/
+
+/*button menu*/
+
+.button2 {
+    --bg: #3b3935;
+    --hover-bg: #fff;
+    --hover-text: #000;
+    color: #fff;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border-radius: 50px;
+    margin-left: 80px;
+    text-decoration: none;
+}
+
+.button2:hover {
+    color: var(--hover-text);
+    -webkit-transform: translate(-0.25rem, -0.25rem);
+    -ms-transform: translate(-0.25rem, -0.25rem);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    -webkit-box-shadow: 0.25rem 0.25rem var(--bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button2:active {
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.cta2 .cta-btn {
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    /*  margin-right: 100px; */
+}
+
+/*///////////// End button menu////////*/
+
+.info-why h1 {
+    padding-top: 5%;
+    color: #28545b;
+    font-family: "AL_LePORSCHE_PersonalUseOnly";
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 5%;
+}
+
+@media (max-width: 768px) {
+    .info-why h1 {
+        text-align: center;
+        font-family: "AL_LePORSCHE_PersonalUseOnly";
+        font-size: 50px;
+    }
+}
+
+.info-why img {
+    width: 30%;
+    text-align: center;
+    /* margin: 30px; */
+    margin-top: 55px;
+}
+
+.info-why p {
+    color: #ffffff;
+    font-family: "Nexa-Heavy";
+    margin: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+}
+/*  # Footer */
+
+#footer {
+    height: 20%;
+    font-size: 14px;
+    background: #fff;
+    font-family: "Nexa-Heavy";
+}
+
+#footer .footer-top {
+    padding: 60px 0 30px 0;
+    background: #fff;
+}
+
+#footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+}
+.footer-contact h2 {
+    font-family: "AL_LePORSCHE_PersonalUseOnly";
+    color: #7651ee;
+}
+
+#footer .footer-contact {
+    margin-top: 8%;
+}
+
+#footer .footer-top .footer-contact h3 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #7651ee;
+}
+
+#footer .footer-contact p {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Nexa-Heavy";
+    color: #5e5e5e;
+}
+@media (max-width: 768px) {
+    #footer .footer-contact p {
+        font-size: 1em;
+        line-height: 24px;
+        margin-bottom: 0;
+        font-family: "Nexa-Heavy";
+        color: #5e5e5e;
+    }
+}
+
+#footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #7651ee;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+#footer .footer-links {
+    margin-bottom: 30px;
+    margin-top: 8%;
+}
+
+.footer-links h5 {
+    font-family: "AL_LePORSCHE_PersonalUseOnly";
+    color: #7651ee;
+}
+
+.footer-links a {
+    color: #000;
+}
+
+.footer-links a:hover {
+    color: #7651ee;
+    transition: 0.4s;
+}
+
+.footer-links ul li {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-links ul li a {
+    text-decoration: none;
+}
+
+#footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #7651ee;
+    font-size: 18px;
+    line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+    color: #777777;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+    text-decoration: none;
+    color: #47b2e4;
+}
+
+.social-links a,
+.social-links a i {
+    font-size: 18px;
+    display: inline-block;
+    color: #001f38;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+.social-links a i {
+    background: #7651ee;
+    color: #ffffff;
+}
+
+.social-links .inst a i:hover {
+    background: #000;
+    padding: 8px 0;
+    -webkit-transform: translate(-0.25rem, -0.25rem);
+    -ms-transform: translate(-0.25rem, -0.25rem);
+    transform: translate(-0.25rem, -0.25rem);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.social-links .inst a i:active {
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0);
+    box-shadow: none;
+}
+
+.social-links a i:hover {
+    background: #000;
+    padding: 8px 0;
+    -webkit-transform: translate(-0.25rem, -0.25rem);
+    -ms-transform: translate(-0.25rem, -0.25rem);
+    transform: translate(-0.25rem, -0.25rem);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.social-links a i:active {
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0);
+    box-shadow: none;
+}
+
+#footer .footer-bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+#footer .copyright {
+    float: left;
+}
+
+#footer .credits {
+    float: right;
+    font-size: 13px;
+}
+
+#footer .credits a {
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    #footer .footer-bottom {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #footer .copyright,
+    #footer .credits {
+        text-align: center;
+        float: none;
+    }
+
+    #footer .credits {
+        padding-top: 4px;
+    }
+}
